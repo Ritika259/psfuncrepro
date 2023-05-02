@@ -15,7 +15,7 @@ if ($env:MSI_SECRET) {
     Disable-AzContextAutosave -Scope Process | Out-Null
     Connect-AzAccount -Identity
 }
-
+Set-Alias -Name az -Value "D:\home\data\CLI2\wbin\az.cmd"
 # Uncomment the next line to enable legacy AzureRm alias in Azure PowerShell.
 # Enable-AzureRmAlias
 
