@@ -2,7 +2,7 @@ using namespace System.Net
 
 # Input bindings are passed in via param block.
 param($Request, $TriggerMetadata)
-
+Connect-AzAccount
 # Map input bindings to variables
 $TableName = $Request.Body.TableName
 $WorkspaceId = $Request.Body.WorkspaceId
